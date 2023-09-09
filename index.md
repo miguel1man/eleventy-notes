@@ -1,23 +1,76 @@
 ---
-title: Home
-headline: Welcome to Eleventy Notes
+title: Inicio
+headline: Llamita Sincera
 panel: false
 ---
 
-Welcome to **Eleventy Notes**, an opinionated template for publishing your personal notes, documentation, or even your blog! Built with [Eleventy](https://11ty.dev/), the powerful static site generator, Eleventy Notes is packed with features you'll love.
+## Features
 
-With Eleventy Notes, you can:
+- AI-Powered Chats: "Llamita Sincera" uses the advanced Llama 2 AI model, creating more genuine and context-aware conversations.
+- Offline Privacy: This app lets you train your AI using personal data offline. No need for internet access, keeping your information secure.
 
-- ✅ Create [[Wikilinks]] and backlinks to easily navigate your content
-- ✅ Organize your content with [[Tags]] for easy searching and filtering
-- ✅ Quickly find what you need with a [[Search|client-side search]]
-- ✅ Choose from two [[Themes]] and multiple color schemes to match your style
-- ✅ Customize your [[Sidebar]] with support for folders and subfolders
-- ✅ Enjoy a lightweight and fast experience, with minimal JavaScript
-- ... and much more!
+## Requirements
 
-Whether you're a blogger, developer, or just someone who loves to write, Eleventy Notes has everything you need to publish your content. So what are you waiting for? Get started today by reading our [[Getting started]] guide and start sharing your thoughts with the world!
+- Python 3.9
+- Node 18
 
----
+## Installation
 
-Built with ❤️ by [Sandro Roth](https://sandroroth.com/)
+1. Install Python dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+2. Install Node.js dependencies:
+
+```
+npm install
+```
+
+3. Download a language model and place it in the `models` folder. [[LLMs]]
+
+## Run
+
+1. Start the backend server using one of the following commands, depending on your Python version:
+
+```
+python -i main.py
+```
+
+or 
+
+```
+python3 -i main.py
+```
+
+2. Once the backend is up and running, start the frontend development server with the following command: 
+
+```
+npm run dev
+```
+
+## Backend
+
+- Llama 2
+- Chroma DB
+- Sentence Transformers
+- Langchain
+- Python
+- Flask
+
+## Frontend
+
+- SvelteKit
+- TypeScript
+- Tailwind CSS
+- Skeleton
+
+## Roadmap
+
+- [x] Linux version
+- [x] Windows version
+- [ ] Mac version
+- [x] .md file type supported
+- [x] .pdf file type supported
+- [ ] .doc file type supported
